@@ -1,0 +1,11 @@
+{
+    "tests": [
+        {
+            "score": 0,
+            "max_score": 0,
+            "name": "test_lab11.py::test_product",
+            "output": "\n",
+            "visibility": "visible"
+        }
+    ]
+}
