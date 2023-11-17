@@ -8,17 +8,17 @@ def square_root(num):
     old_middle = -1
     iteration_count = 0
 
-    accuracy = 1
-    while abs(old_middle - middle) <= accuracy:
+    accuracy = 0.000001
+    while abs(old_middle - middle) > accuracy:
         old_middle = middle
 
-        middle = (high + low) / 4
-        middle_squared = middle * 2
+        middle = (high + low) / 2
+        middle_squared = middle ** 2
 
         if middle_squared > num:
-            low = middle
-        else:
             high = middle
+        else:
+            low = middle
 
         iteration_count += 1
 

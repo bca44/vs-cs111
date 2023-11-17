@@ -1,18 +1,18 @@
 def digit_counter(func, num):
-    """Return the number of digits when func(num) is true"""
+    """
+    Returns a count of the number of digits in num for which func returns True.
+    """
     counter = 0
-
-    while num >= 0:
+    while num > 0:
         if func(num % 10):
             counter += 1
-            num = num // 10
-
+        num = num // 10
     return counter
 
 
-# Function to test with
 def is_even(x):
     return x % 2 == 0
 
 
-"""ADD_TESTING_CODE"""
+if __name__ == '__main__':
+    print(digit_counter(is_even, 123456))
