@@ -5,7 +5,7 @@ from Grid import Grid
 from Sand import Sand
 
 
-all_sand = []
+all_sand = []  # empty list to store all sand objects
 
 
 def add_sand(grid, x, y):
@@ -27,11 +27,10 @@ def add_sand(grid, x, y):
     >>> add_sand(grid1, 0, -1)
     Index Error at (0, -1).
     """
-    if grid.get(x, y) is not None:
-        return
-    else:
+    if grid.get(x, y) is None:
         new_sand = Sand(grid, x, y)
         all_sand.append(new_sand)
+        grid.set(x, y, new_sand)
 
 
 def remove_sand(grid, x, y):
@@ -57,9 +56,7 @@ def remove_sand(grid, x, y):
     >>> grid1.get(0, 0) is None
     True
     """
-    if not isinstance(grid.get(x, y), Sand):
-        return
-    else:
+    if isinstance(grid.get(x, y), Sand):
         all_sand.remove(grid.get(x, y))
         grid.set(x, y, None)
 
@@ -69,8 +66,8 @@ def do_whole_grid():
     Do one round of gravity over the whole grid.
     """
     all_sand.sort(key=lambda particle: (-particle.y, particle.x))
-    for obj in all_sand:
-        obj.move(obj.gravity)
+    for sand in all_sand:
+        sand.move(sand.gravity)
 
 
 #########################################################

@@ -1,10 +1,12 @@
-from Grid import Grid
-
 class Sand:
+    """
+    Sand object - representing a single particle of sand in a Grid object
+    stores Grid object and position in Grid
+    """
 
     def __init__(self, grid, x=0, y=0):
         """
-        creates Sand object with grid, x, y parameters
+        creates Sand object with grid and position
         """
         self.grid = grid
         self.x = x
@@ -20,7 +22,7 @@ class Sand:
     def gravity(self):
         """
         calls is_move_ok to validate proposed move
-        returns valid position to move to, in (x, y) tuple
+        returns valid position to move to, as (x, y) tuple
         """
         # start with straight down case
         if self.is_move_ok(self.x, self.y + 1):
@@ -68,11 +70,3 @@ class Sand:
         self.grid.set(x_to, y_to, self)
         self.x = x_to
         self.y = y_to
-
-
-def main():
-    pass
-
-
-if __name__ == "__main__":
-    main()
