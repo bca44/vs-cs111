@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/project 1/hw01/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 1/hw02/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 1/lab02/lab02/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 1/lab03/lab03/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 1/lab04/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 1/lab05/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 1/lab06/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 1/proj1/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 2/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 2/lab07/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 2/lab08/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 2/lab09/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 2/lab10/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 2/lab11/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/project 2/lab12/.pytest_cache/v" />
+    </content>
     <orderEntry type="jdk" jdkName="C:\ProgramData\miniconda3" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
